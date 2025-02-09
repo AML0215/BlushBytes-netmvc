@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<h1>Hello. Welcome to the netmvc website!</h1>
+<p>If you are interested in working with us, please submit your details through our contact page.</p>
+
+<!-- Standard button that navigates to the Contact page -->
+<button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Contact", "Contact")'">
+    Go to Contact Form
+</button>

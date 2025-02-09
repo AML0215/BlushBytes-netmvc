@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+@model netmvc.Models.ContactForm
+
+<form method="post" asp-action="Submit">
+    <div class="form-group">
+        <label for="Name">Name *</label>
+        @Html.TextBoxFor(m => m.Name, new { id = "Name", required = "required" })
+        @Html.ValidationMessageFor(m => m.Name)
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email *</label>
+        @Html.TextBoxFor(m => m.EmailAddress, new { id = "Email", type = "email", required = "required" })
+        @Html.ValidationMessageFor(m => m.EmailAddress)
+    </div>
+
+    <div class="form-group">
+        <label for="Message">Message *</label>
+        @Html.TextAreaFor(m => m.Message, new { id = "Message", required = "required" })
+        @Html.ValidationMessageFor(m => m.Message)
+    </div>
+
+    <div class="form-group">
+        <label for="Age">Age (Optional)</label>
+        @Html.TextBoxFor(m => m.Age, new { id = "Age", type = "number" })
+        @Html.ValidationMessageFor(m => m.Age)
+    </div>
+
+    <div class="form-group">
+        <label for="ContactNumber">Contact Number (Optional)</label>
+        @Html.TextBoxFor(m => m.ContactNumber, new { id = "ContactNumber" })
+        @Html.ValidationMessageFor(m => m.ContactNumber)
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
