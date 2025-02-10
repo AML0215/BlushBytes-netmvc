@@ -1,55 +1,58 @@
+/* site.css */
 
-
-/* Base font size and media queries for responsiveness */
-html {
-    font-size: 14px;
-}
-
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-/* Focus styles for buttons and form controls */
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-/* Ensure the document has at least the height of the screen */
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-/* Adjust bottom margin of the body to make room for the footer */
+/* Body with Gradient Background */
 body {
-    margin-bottom: 60px;
+    background: linear-gradient(to right, #F6DAE8, #8E98CB); /* Gradient background */
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black; /* Text color */
 }
 
-/* Custom Button Styles */
-
-/* Default custom button */
-.btn-custom {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    border-radius: 5px; /* Rounded corners */
-    border: none; /* Remove border */
-    padding: 10px 20px; /* Adjust padding */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth color transition */
+/* Header section */
+.header {
+    position: fixed; /* Fixes the header to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the page */
+    background: #333; /* Dark background color for the header */
+    color: white;
+    z-index: 1000; /* Makes sure the header is above all content */
+    display: flex; /* Use flexbox to align logo and menu */
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Vertically center the items */
+    padding: 10px 20px; /* Padding to give space around content */
 }
 
-    /* Hover effect for custom button */
-    .btn-custom:hover {
-        background-color: #0056b3; /* Darker blue on hover */
+    /* Logo styles */
+    .header .logo img {
+        height: 40px; /* Adjust logo size */
     }
 
-/* Optional: Modify .btn-primary to match .btn-custom style */
-.btn-primary {
-    background-color: #007bff !important; /* Custom blue color */
-    color: white !important; /* Ensure the text stays white */
-    border-radius: 5px !important; /* Same rounded corners */
-    border: none !important; /* No border */
+/* Navbar (menu) styles */
+.navbar ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
 }
+
+.navbar li {
+    margin-left: 20px; /* Space between menu items */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text for the menu */
+    font-size: 16px;
+}
+
+    .navbar a:hover {
+        color: #feb47b; /* Change color on hover */
+    }
+
+.container {
+    margin-top: 80px;
+    padding: 20px;
+}
+

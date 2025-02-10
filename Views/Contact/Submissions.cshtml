@@ -6,13 +6,13 @@
 }
 
 <h1>Submitted Contact Forms</h1>
-<p>Below are all the submissions from the contact form. You can search by name to filter the submissions.</p>
+<p>Below are all the submissions from the contact form.You can search by name to filter the submissions.</p>
 
 <!-- Search form to filter by name -->
 <form method="get" action="@Url.Action("Submissions", "Contact")">
-    <label for="search">Search by Name:</label> <!-- Corrected 'for' -->
-    <input type="text" id="search" name="searchName" value="@searchQuery" /> <!-- Corrected 'name' to 'searchName' -->
-    <button type="submit">Search</button>
+    <label for="search">Search by Name:</label>
+    <input type="text" id="search" name="searchName" value="@searchQuery" />
+    <button type="submit" class="btn btn-primary">Search</button>
 </form>
 
 <br />

@@ -170,3 +170,5 @@ C:\Users\user\source\repos\netmvc\netmvc\bin\Debug\net8.0\runtimes\browser\lib\n
 C:\Users\user\source\repos\netmvc\netmvc\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\user\source\repos\netmvc\netmvc\obj\Debug\net8.0\netmvc.csproj.Up2Date
 C:\Users\user\source\repos\netmvc\netmvc\bin\Debug\net8.0\wwwroot\images\logo.png
+C:\Users\user\source\repos\netmvc\netmvc\obj\Debug\net8.0\netmvc.sourcelink.json
+C:\Users\user\source\repos\netmvc\netmvc\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
